@@ -19,7 +19,7 @@ let news = {
     if (pageInit == 0) {
       document.querySelector(".containers-news").textContent = "";
     }
-    for (let i = pageInit; i < pageEnd; i++) {
+    for (i = pageInit; i <= pageEnd; i++) {
       const { title } = data.articles[i];
       let h2 = document.createElement("h2")
       h2.textContent = title;
@@ -52,7 +52,7 @@ let news = {
       item.appendChild(h2)
       item.appendChild(img)
       item.appendChild(info_item)
-      item.setAttribute("onclick", "location.href='" + url + " ")
+      item.setAttribute("onclick", "location.href='" + url + "'");
       document.querySelector(".containers-news").appendChild(item);
 
     }
