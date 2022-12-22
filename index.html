@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>NewsAPI</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>News</h1>
+    <header>
+      <nav>
+        <span class="cat" onclick="search('technology')">technology </span>
+        <span class="cat" onclick="search('programming')">programming</span>
+        <span class="cat" onclick="search('sports')">sports</span>
+        <span class="cat" onclick="search('economics')">economics</span>
+        <span class="cat" onclick="search('education')">education</span>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="what do you want see?" id="search">
+        <button onclick="searchTopic()">Search</button>
+      </div>
+    </header>
+
+    <div class="containers-news">
+      
+    </div>
+  </div>
+</body>
+
+</html>
